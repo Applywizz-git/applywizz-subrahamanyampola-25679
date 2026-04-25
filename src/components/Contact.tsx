@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { Send, Mail, User, MessageSquare, CheckCircle, Phone, Linkedin, Github, MapPin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { resumeData } from "@/data/resume";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -98,43 +99,47 @@ const Contact = () => {
             <h3 className="text-2xl font-serif text-platinum mb-6">Let's create something extraordinary together.</h3>
 
             <div className="space-y-6">
-              <a href="tel:(361)-510-5276" className="flex items-center gap-4 group">
+              <a href={`tel:${resumeData.phone}`} className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center border border-divider group-hover:border-primary/50 transition-colors">
                   <Phone className="text-primary" size={20} />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
-                  <p className="text-platinum group-hover:text-primary transition-colors">(361)-510-5276</p>
+                  <p className="text-platinum group-hover:text-primary transition-colors">{resumeData.phone}</p>
                 </div>
               </a>
 
-              <a href="mailto:chandanalingala04@gmail.com" className="flex items-center gap-4 group">
+              <a href={`mailto:${resumeData.email}`} className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center border border-divider group-hover:border-primary/50 transition-colors">
                   <Mail className="text-primary" size={20} />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="text-platinum group-hover:text-primary transition-colors">chandanalingala04@gmail.com</p>
+                  <p className="text-platinum group-hover:text-primary transition-colors">{resumeData.email}</p>
                 </div>
               </a>
 
-              <a href="https://www.linkedin.com/in/lingalachandana23/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+              <a href={resumeData.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center border border-divider group-hover:border-primary/50 transition-colors">
                   <Linkedin className="text-primary" size={20} />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">LinkedIn</p>
-                  <p className="text-platinum group-hover:text-primary transition-colors">linkedin.com/in/lingalachandana23</p>
+                  <p className="text-platinum group-hover:text-primary transition-colors">
+                    {resumeData.linkedin.replace("https://www.", "").replace("https://", "")}
+                  </p>
                 </div>
               </a>
 
-              <a href="https://github.com/clingala" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+              <a href={resumeData.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center border border-divider group-hover:border-primary/50 transition-colors">
                   <Github className="text-primary" size={20} />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">GitHub</p>
-                  <p className="text-platinum group-hover:text-primary transition-colors">github.com/clingala</p>
+                  <p className="text-sm text-muted-foreground">Portfolio/GitHub</p>
+                  <p className="text-platinum group-hover:text-primary transition-colors">
+                    {resumeData.github.replace("https://", "").replace(/\/$/, "")}
+                  </p>
                 </div>
               </a>
 
@@ -144,7 +149,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="text-platinum group-hover:text-primary transition-colors">Corpus Christi, TX</p>
+                  <p className="text-platinum group-hover:text-primary transition-colors">{resumeData.location}</p>
                 </div>
               </div>
             </div>

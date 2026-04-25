@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
+import { resumeData } from "@/data/resume";
 
 const navItems = [
   "Home", "About", "Experience", "Projects", "Skills", "Certifications", "Education", "Contact",
@@ -37,9 +38,10 @@ const MobileSidebar = ({ open, onClose }: MobileSidebarProps) => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between p-6 border-b border-divider">
-              <span className="text-xl font-serif font-bold gradient-gold-text">CL</span>
+              <span className="text-xl font-serif font-bold gradient-gold-text">
+                {resumeData.name.split(' ').map(n => n[0]).join('')}
+              </span>
               <button
-                onClick={onClose}
                 className="p-2 text-platinum/60 hover:text-primary transition-colors"
                 aria-label="Close navigation"
               >
@@ -79,7 +81,7 @@ const MobileSidebar = ({ open, onClose }: MobileSidebarProps) => {
 
             <div className="p-6 border-t border-divider">
               <p className="text-xs text-muted-foreground text-center">
-                © {new Date().getFullYear()} Chandana Lingala
+                © {new Date().getFullYear()} {resumeData.name}
               </p>
             </div>
           </motion.nav>

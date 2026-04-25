@@ -245,10 +245,10 @@ import { motion } from "framer-motion";
 import { Download, ArrowDown } from "lucide-react";
 import { Link } from "react-scroll";
 import heroBg from "@/assets/hero-bg.jpg";
-import profilePhoto from "@/assets/profile-photo.jpeg";
+const profilePhoto = "/profile.jpeg";
 import { resumeData } from "@/data/resume";
 
-const techCycle = ["Python", "FastAPI", "GenAI", "MLOps"];
+const techCycle = ["Python", "TensorFlow", "PyTorch", "NLP"];
 
 const Hero = () => {
   const [currentTech, setCurrentTech] = useState(0);
@@ -259,7 +259,7 @@ const Hero = () => {
 
   // Greeting typing effect
   useEffect(() => {
-    const greeting = "Hi, I'm Chandana Lingala";
+    const greeting = `Hi, I'm ${resumeData.name}`;
     if (greetingText.length < greeting.length) {
       const timeout = setTimeout(() => {
         setGreetingText(greeting.slice(0, greetingText.length + 1));
@@ -338,15 +338,15 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              AI/ML Engineer
+              AI & ML Engineer
             </motion.p>
 
             <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6 text-platinum text-3d">
-              Intelligent AI
+              Enterprise AI
               <br />
-              Systems with
+              Pipelines with
               <br />
-              <span className="gradient-gold-text">Generative AI</span>
+              <span className="gradient-gold-text">Machine Learning</span>
             </h1>
 
             <motion.p
@@ -355,8 +355,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              Building intelligent AI solutions with Python, Generative AI, and RAG architectures.
-              Specialized in developing scalable machine learning pipelines and real-time prediction systems.
+              Artificial Intelligence and Machine Learning Engineer with 3+ years of experience supporting data processing pipelines, dataset validation workflows, and machine learning–ready analytics environments across financial and healthcare platforms.
             </motion.p>
 
 
@@ -439,7 +438,7 @@ const Hero = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-2 border-primary/50 shadow-2xl shadow-primary/20 backdrop-blur-md bg-card/10 relative z-10">
                 <img
                   src={profilePhoto}
-                  alt="Chandana Lingala"
+                  alt={resumeData.name}
                   className="w-full h-full object-cover"
                   loading="eager"
                 />
@@ -455,7 +454,7 @@ const Hero = () => {
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 style={{ transform: "translateZ(30px)" }}
               >
-                <span className="text-accent font-mono font-bold">AI/ML Specialist</span>
+                <span className="text-accent font-mono font-bold">3+ Years Exp</span>
               </motion.div>
             </motion.div>
           </motion.div>

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
+import { resumeData } from "@/data/resume";
 
 const navItems = [
   "Home", "About", "Experience", "Projects", "Skills", "Certifications", "Education", "Contact",
@@ -41,7 +42,7 @@ const Header = ({ onOpenSidebar }: { onOpenSidebar: () => void }) => {
               className="cursor-pointer"
             >
               <span className="text-xl md:text-2xl font-serif font-bold gradient-gold-text">
-                CL
+                {resumeData.name.split(' ').map(n => n[0]).join('')}
               </span>
             </Link>
           </motion.div>

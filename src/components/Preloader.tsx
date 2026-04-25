@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { resumeData } from "@/data/resume";
 
 const Preloader = ({ onComplete }: { onComplete: () => void }) => {
   const [isExiting, setIsExiting] = useState(false);
-  const name = "CHANDANA LINGALA";
+  const name = resumeData.name.toUpperCase();
   const letters = name.split("");
 
   useEffect(() => {

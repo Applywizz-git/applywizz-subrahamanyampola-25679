@@ -1,166 +1,156 @@
-import healthcare from "@/assets/healthcare.png";
-import chatbot from "@/assets/chatbot.png";
-import youtube from "@/assets/youtube.png";
-import career from "@/assets/career.png";
+import elearningChatbot from "@/assets/elearning_chatbot.png";
+import ecommerceRecommendation from "@/assets/ecommerce_recommendation.png";
+import imageRecognition from "@/assets/youtube.png";
 
 export const resumeData = {
-  name: "Chandana Lingala",
-  title: "AI/ML Engineer",
-  location: "Corpus Christi, TX",
-  phone: "(361)-510-5276",
-  email: "chandanalingala04@gmail.com",
-  linkedin: "https://www.linkedin.com/in/lingalachandana23/",
-  github: "https://github.com/clingala",
+  name: "SUBRAHAMANYAM POLA",
+  title: "AI and ML Engineer",
+  location: "Dublin, Ireland",
+  phone: "+3 53874786869",
+  email: "subramanyampola05@gmail.com",
+  linkedin: "https://www.linkedin.com/in/subrahamanyam-pola-9b3012233/",
+  github: "https://github.com/SubrahamanyamPola",
   resumeUrl: "/resume.pdf",
 
   summary: [
-    "AI/ML Engineer with hands-on experience in building and integrating machine learning and Generative AI solutions using Python and FastAPI to support real-time prediction and intelligent workflows.",
-    "Skilled in developing large language models-powered and RAG-based systems using semantic search and vector databases to improve response accuracy. Strong in NLP, feature engineering, and ML pipeline development, enabling scalable data processing and reliable inference systems.",
-    "Experienced in delivering data-driven AI solutions that improve automation and support business decision-making.",
+    "Artificial Intelligence and Machine Learning Engineer with 3+ years of experience supporting data processing pipelines, dataset validation workflows, and machine learning–ready analytics environments across financial and healthcare platforms.",
+    "Experienced in building NLP pipelines, recommendation systems, and convolutional neural network models using Python, TensorFlow, PyTorch, Scikit-learn, and Hugging Face Transformers. Strong background in SQL-based dataset engineering, ETL workflow validation, feature preprocessing, and structured data pipeline reliability across distributed application environments on AWS and Google Cloud Platform.",
+    "Proven ability to prepare analytics-ready datasets and support supervised learning experimentation across enterprise-scale application systems."
   ],
 
   stats: [
-    { label: "AI/ML Projects", value: 10 },
-    { label: "Model Accuracy", value: 95 },
-    { label: "Efficiency Gain", value: 40 },
+    { label: "Years Experience", value: 3 },
+    { label: "AI/ML Projects", value: 15 },
+    { label: "Cloud Platforms", value: 2 },
   ],
 
   experience: [
     {
-      company: "BCG (Virtual Job Simulation)",
-      role: "GenAI Consultant",
-      dates: "Apr 2026",
+      company: "Broadridge Financial Solutions | Bangalore, India",
+      role: "Data Scientist",
+      dates: "Jun 2021 - Dec 2023",
       bullets: [
-        "Built a Generative AI-powered financial chatbot using LLM-based processing and NLP techniques with Python and Pandas to extract and interpret data from 10-K and 10-Q filings, improving financial insight accessibility for business users.",
-        "Processed and standardized financial datasets using Pandas and NumPy for data preprocessing and feature engineering, reducing data inconsistencies by 30% and improving downstream analytics reliability.",
-        "Designed response generation workflows using prompt engineering and LLM-aligned NLP pipelines, enabling accurate summarization of financial metrics such as revenue trends and risk factors.",
-        "Integrated retrieval-based data pipelines (RAG-aligned) and chatbot logic using Python, supporting automated financial analysis and reducing manual effort by 40% in consulting workflows.",
-        "Applied Natural Language Processing (NLP), text extraction, and entity recognition techniques to identify key financial disclosures, improving response relevance and interpretability.",
-        "Evaluated chatbot outputs and refined logic using TensorFlow/PyTorch-based model evaluation and performance optimization techniques, improving response accuracy by 20% across multiple query scenarios.",
+        "Developed Python-based data processing workflows supporting structured preparation of financial transaction datasets for downstream analytics-ready processing across distributed application environments.",
+        "Constructed SQL-driven dataset validation pipelines using MySQL, PostgreSQL, and MongoDB ensuring consistency of enterprise-scale transaction-processing datasets across integrated service modules.",
+        "Engineered feature-aligned preprocessing routines supporting structured dataset preparation across billing and account-processing analytics workflows.",
+        "Executed distributed dataset validation across AWS-hosted microservice-based environments supporting stability of enterprise analytics pipeline behaviour across release lifecycle stages.",
+        "Integrated workflow automation routines within CI/CD pipelines supporting repeatable dataset verification across coordinated analytics-ready data pipeline environments.",
+        "Verified relational and NoSQL backend dataset integrity using Excel and Power BI reporting-layer validation outputs supporting management-level financial analytics readiness workflows.",
+        "Collaborated with development and platform engineering teams to investigate dataset inconsistencies improving reliability across enterprise-scale financial analytics workflows.",
+        "Supported traceability between requirement-level specifications and backend dataset structures improving transparency across analytics-ready financial data preparation pipelines."
       ],
-      tech: ["Python", "Pandas", "LLMs", "RAG", "NLP", "TensorFlow", "PyTorch"],
+      tech: ["Python", "SQL", "MySQL", "PostgreSQL", "MongoDB", "AWS", "CI/CD", "Power BI", "Excel"]
     },
     {
-      company: "Tata Group (Virtual Job Simulation)",
-      role: "Generative AI Specialist",
-      dates: "Apr 2026",
+      company: "IBM | Bangalore, India",
+      role: "Data Engineer",
+      dates: "Jan 2021 - May 2021",
       bullets: [
-        "Conducted exploratory data analysis using Python, Pandas, and NumPy to assess financial datasets, uncovering delinquency risk indicators and improving data quality consistency by 25%.",
-        "Transformed raw customer transaction data through feature engineering and preprocessing techniques, enabling structured inputs for delinquency risk assessment models.",
-        "Formulated a predictive framework leveraging Generative AI-assisted logic design and statistical analysis, reducing model development time.",
-        "Spearheaded the design of an AI-driven collections strategy using data segmentation and rule-based automation, improving recovery prioritization efficiency by 20%.",
-        "Generated business-ready insights using NLP, LLM-assisted summarization, and Tableau/Power BI dashboards, reducing manual reporting effort by 30%.",
-        "Assessed model performance and calibrated risk thresholds using Python-based validation techniques, improving delinquency classification accuracy by 18%.",
+        "Analysed structured enterprise application datasets using SQL validation routines supporting consistency verification across Electronic Medical Record data-processing workflows.",
+        "Designed dataset traceability mappings aligning requirement-level specifications with relational schemas supporting ETL workflow validation across application-layer data pipelines.",
+        "Constructed structured dataset validation scenarios improving integrity verification coverage across multi-module enterprise healthcare data-processing environments.",
+        "Executed relational dataset verification workflows using Oracle SQL supporting stable backend processing across integrated enterprise service components.",
+        "Prepared requirement-to-dataset mapping artefacts supporting transparency across enterprise data integration workflows during sprint delivery cycles.",
+        "Collaborated with engineering teams to investigate dataset inconsistencies improving reliability across healthcare analytics-ready platform workflows.",
+        "Maintained dataset validation documentation supporting traceable enterprise data-processing readiness across regulated platform deployment environments.",
+        "Coordinated regression-level dataset validation workflows supporting consistent enterprise application data integrity across iterative analytics pipeline updates."
       ],
-      tech: ["Python", "Pandas", "NumPy", "NLP", "LLMs", "Tableau", "Power BI"],
+      tech: ["SQL", "Oracle SQL", "ETL", "Data Pipelines", "Data Validation", "Data Engineering"]
     },
     {
-      company: "Augur Talentcare Private Limited | Client: ADNOC",
-      role: "AI/ML Engineer",
-      dates: "May 2022 - Jun 2024",
+      company: "LOTUS Hospital | Bangalore, India",
+      role: "ML Engineer",
+      dates: "Sep 2020 - Dec 2020",
       bullets: [
-        "Built data preprocessing pipelines using Python, Pandas, and NumPy to prepare industrial sensor and equipment datasets for machine learning model training, reducing preprocessing time by 25%.",
-        "Processed large-scale industrial equipment and operational datasets using SQL and Python, enabling structured inputs for predictive maintenance and asset monitoring models, improving data consistency by over 30%.",
-        "Performed data validation and cleansing on structured and unstructured data, achieving ~95% accuracy in model training datasets and improving overall model performance.",
-        "Prepared labeled datasets for computer vision and NLP models on equipment inspection and operational logs, improving anomaly detection accuracy by 20% in asset monitoring workflows.",
-        "Collaborated with data science teams to refine feature engineering and model input requirements, reducing model retraining cycles by 15% and improving training efficiency.",
-        "Standardized data transformation workflows using Python and supported CI/CD pipelines with Docker and Kubernetes for model deployment, reducing dataset turnaround time by 20-25% and improving release consistency.",
-        "Integrated processed datasets into ML pipelines and deployed model inference systems, enabling real-time predictions for equipment health monitoring and operational decision-making.",
-        "Monitored pipeline performance and resolved inconsistencies using validation and logging, improving pipeline stability and reducing data errors by 18% in production AI systems.",
+        "Designed neonatal ICU dashboard dataset validation workflows supporting preparation of patient-monitoring datasets for downstream supervised learning experimentation.",
+        "Prepared structured healthcare dataset consistency checks using SQL verification routines improving reliability of neonatal patient-record analytics workflows.",
+        "Developed feature-aligned preprocessing support workflows using Python data-handling routines enabling structured dataset preparation across healthcare analytics environments.",
+        "Collaborated with clinical stakeholders to translate neonatal monitoring requirements into structured dataset validation scenarios supporting healthcare workflow intelligence readiness.",
+        "Validated cross-platform clinical dashboard behaviour supporting stable delivery of structured healthcare data visualisation interfaces.",
+        "Constructed dataset mapping logic aligning dashboard interface attributes with backend healthcare record schemas supporting traceability across neonatal monitoring pipelines.",
+        "Supported preparation of neonatal workflow datasets enabling downstream model evaluation readiness across supervised analytics experimentation workflows.",
+        "Documented dataset validation workflows supporting transparency across dashboard-driven clinical reporting pipelines used within neonatal ICU monitoring systems."
       ],
-      tech: ["Python", "Pandas", "SQL", "Docker", "Kubernetes", "ML Pipelines", "Computer Vision", "NLP"],
+      tech: ["Python", "SQL", "Data Validation", "Feature Engineering", "Data Handling", "Machine Learning"]
     },
+    {
+      company: "Edureka Learning Platform | India (Remote)",
+      role: "Full Stack Web Development Intern",
+      dates: "May 2020 - Sep 2020",
+      bullets: [
+        "Implemented responsive frontend interfaces using HTML, CSS, and JavaScript supporting structured user-interaction workflows across learning-platform application modules, improving usability of dataset-driven training-content navigation features.",
+        "Developed REST API-based backend connectivity using Flask and Django enabling structured dataset exchange between interface components and database-backed services supporting reliable training-platform workflows.",
+        "Configured relational database interaction workflows supporting structured user-profile dataset management and persistence across training-platform application components enabling stable backend data access operations.",
+        "Collaborated with mentoring engineers supporting modular feature development across integrated frontend and backend learning-platform environments improving coordination across application workflow delivery stages.",
+        "Validated integrated frontend–backend execution behaviour across application modules supporting stable interaction between interface components and backend dataset-processing services.",
+        "Maintained structured development updates within shared Git-based repositories supporting version-controlled collaboration across distributed learning-platform feature delivery workflows."
+      ],
+      tech: ["HTML", "CSS", "JavaScript", "Flask", "Django", "REST APIs", "Git", "SQL"]
+    }
   ],
 
   projects: [
     {
-      title: "Microservices-Based Healthcare Monitoring System",
-      image: healthcare,
+      title: "AI-Driven E-Learning Personalization Chatbot",
+      image: elearningChatbot,
       description: [
-        "Developed a healthcare monitoring system using FastAPI and Docker-based microservices, enabling modular services for vitals tracking, alerts, and reporting across distributed workflows.",
-        "Applied real-time data processing with MongoDB and REST APIs to handle continuous patient data streams, improving data availability and supporting timely monitoring operations.",
-        "Implemented alert mechanisms for abnormal vitals, reducing response time for critical conditions by 30% and enabling faster intervention in monitoring workflows.",
+        "Implemented conversational AI chatbot workflows using Dialogflow integrated with Python NLP pipelines enabling automated learner-query classification across structured interaction datasets.",
+        "Configured transformer-based intent recognition pipelines using Hugging Face models improving contextual classification accuracy across multi-topic conversational scenarios.",
+        "Structured dialogue-routing logic supporting adaptive learning content recommendation workflows across personalised interaction pipelines."
       ],
-      tech: ["FastAPI", "Docker", "MongoDB", "REST APIs", "Microservices"],
+      tech: ["Python", "Dialogflow", "NLP", "Hugging Face Transformers", "Conversational AI"]
     },
     {
-      title: "AI Chatbot Application",
-      image: chatbot,
+      title: "E-Commerce Recommendation System",
+      image: ecommerceRecommendation,
       description: [
-        "Built a conversational AI system using Python, FastAPI, Flask, and NLP techniques, enabling context-aware query handling for document-driven user interactions.",
-        "Implemented retrieval-based AI systems architecture using FAISS and ChromaDB to retrieve relevant context, improving answer accuracy by 35% and reducing irrelevant responses.",
-        "Enhanced response quality through semantic search and contextual retrieval, enabling more reliable outputs across multi-query conversational scenarios.",
+        "Developed hybrid recommendation engine using collaborative filtering and content-based modelling with Scikit-learn improving personalised ranking relevance across behavioural datasets.",
+        "Engineered dataset preprocessing workflows using Pandas and NumPy supporting exploratory data analysis across similarity-scoring pipelines.",
+        "Evaluated recommendation performance outputs using ranking-based similarity metrics improving reliability of personalised discovery workflows."
       ],
-      tech: ["Python", "FastAPI", "FAISS", "ChromaDB", "NLP"],
+      tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "Recommendation Systems"]
     },
     {
-      title: "YouTube Video Summarizer",
-      image: youtube,
+      title: "Image Recognition System for Object Classification",
+      image: imageRecognition,
       description: [
-        "Built a transcript-driven video summarization system using Python and FastAPI with OpenAI API–based NLP pipelines, reducing manual review effort for long-form video content by ~40%.",
-        "Implemented chunk-based transcript segmentation and REST API processing workflows using FastAPI and Axios integration, improving large-transcript handling reliability and reducing token-limit failures by ~30%.",
-        "Developed a React-based frontend with secure environment configuration and CORS-enabled API communication workflows, improving response stability across multi-request summarization interactions.",
+        "Implemented convolutional neural network classification pipelines using TensorFlow and Keras improving recognition accuracy across structured image datasets.",
+        "Applied transfer-learning techniques using pretrained VGG16 and ResNet architectures improving classification stability across limited labelled training datasets.",
+        "Optimised dataset augmentation workflows using Python-based preprocessing techniques improving model generalisation performance and classification stability across multi-category image recognition inputs."
       ],
-      tech: ["Python", "FastAPI", "OpenAI API", "React", "Axios"],
-    },
-    {
-      title: "Career Assist - AI-Based Career Guidance Platform",
-      image: career,
-      description: [
-        "Built a career recommendation platform using Python and machine learning techniques, enabling personalized suggestions based on user skills and preferences.",
-        "Applied resume parsing and feature extraction to evaluate candidate profiles, improving job-role matching accuracy by 20% and supporting better recommendations.",
-        "Developed backend services and database integrations to manage user data, enabling scalable recommendation workflows and consistent user experience.",
-      ],
-      tech: ["Python", "Machine Learning", "NLP", "Feature Extraction"],
-    },
+      tech: ["Python", "TensorFlow", "Keras", "CNN", "Transfer Learning", "VGG16", "ResNet"]
+    }
   ],
 
   skills: {
-    "Programming & Querying": ["Python", "SQL", "Java"],
-    "Machine Learning & Deep Learning": [
-      "Machine Learning", "Deep Learning", "Feature Engineering", "Model Evaluation",
-      "Model Optimization", "Model Inference", "Prediction Systems",
-    ],
-    "Generative AI & LLMs": [
-      "Large Language Models (LLMs)", "Retrieval-Augmented Generation (RAG)",
-      "Prompt Engineering", "Contextual Retrieval", "Semantic Search",
-    ],
-    "NLP & Text Processing": [
-      "Natural Language Processing (NLP)", "Text Embedding", "Tokenization",
-      "Text Similarity", "Entity Recognition",
-    ],
-    "Frameworks & Libraries": ["PyTorch", "TensorFlow", "Scikit-learn", "Hugging Face Transformers"],
-    "LLM & Vector Infrastructure": ["FAISS", "ChromaDB", "Vector Search", "Embedding Models"],
-    "Backend & API Development": ["FastAPI", "Flask", "Spring Boot", "REST API Development", "API Integration"],
-    "Cloud, MLOps & Deployment": [
-      "AWS (EC2, S3)", "Docker", "Kubernetes", "CI/CD Pipelines",
-      "Model Deployment", "Scalable AI Systems", "Production AI Systems",
-    ],
-    "Data Processing & Pipelines": [
-      "Data Preprocessing", "Data Validation", "Data Pipelines",
-      "Real-Time Data Processing", "Feature Engineering",
-    ],
-    "Visualization & Reporting": ["Tableau", "Power BI"],
-    "Tools & Version Control": ["Git", "GitHub"],
+    "AI & ML": ["Machine Learning Pipelines", "Supervised Learning", "Feature Engineering Support", "Dataset Preprocessing", "Model Evaluation Preparation", "Recommendation Systems", "CNN Architectures", "Transfer Learning", "Natural Language Processing Pipelines", "Transformers (Hugging Face)", "Conversational AI Workflows"],
+    "Programming": ["Python", "SQL", "Java", "JavaScript", "Bash"],
+    "Deep Learning Frameworks": ["TensorFlow", "PyTorch", "Scikit-learn", "Keras"],
+    "Natural Language Processing": ["spaCy", "NLTK", "Transformer-based Intent Classification"],
+    "Data Engineering & Analytics": ["Pandas", "NumPy", "Exploratory Data Analysis", "Data Processing Pipelines", "Data Validation Workflows", "ETL Workflow Validation", "Dataset Traceability Mapping", "Excel Analytics", "Power BI Reporting Validation"],
+    "Databases": ["MySQL", "PostgreSQL", "MongoDB", "Oracle SQL"],
+    "Cloud AI Platforms": ["AWS (Compute, Storage, Distributed Application Data Workflows)", "Google Cloud Platform (Data Engineering Exposure)"],
+    "AI Pipeline Engineering Workflows": ["Dataset Preparation", "Feature Alignment Support", "Structured Data Integrity Validation", "Analytics-Ready Dataset Construction"],
+    "Version Control & Collaboration": ["Git", "GitHub", "GitLab", "Agile (Scrum)", "Jira", "Confluence"]
   },
 
   certifications: [
-    "Machine Learning Crash Course - Google",
-    "Machine Learning Specialization - DeepLearning.AI",
-    "BCG - GenAI Job Simulation",
-    "Tata Group - Data Analytics Job Simulation",
-    "Generative AI with Large Language Models - Coursera",
-    "Natural Language Processing Specialization - Coursera",
+    "AWS Certified Machine Learning - Specialty - Amazon Web Services",
+    "Google Cloud Professional Data Engineer - Google Cloud",
+    "Deep Learning Specialization - Coursera",
+    "ISTQB Certified Tester - Foundation Level - ISTQB",
+    "Data Science and Artificial Intelligence Program - UpGrad Campus",
+    "Full Stack Web Development Internship Program - Edureka"
   ],
 
   education: [
     {
-      degree: "Masters in Computer Science",
-      institution: "Texas A&M University - Corpus Christi",
+      degree: "Master of Science in Artificial Intelligence",
+      institution: "National College of Ireland | Dublin, Ireland",
     },
     {
-      degree: "Bachelor of Technology in Electronics & Communication Engineering",
-      institution: "Anurag University",
+      degree: "Bachelor of Engineering in Mechanical Engineering",
+      institution: "Sathyabama Institute of Science and Technology | Tamil Nadu, India",
     },
   ],
 };
