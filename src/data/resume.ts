@@ -10,7 +10,7 @@ export const resumeData = {
   email: "subramanyampola05@gmail.com",
   linkedin: "https://www.linkedin.com/in/subrahamanyam-pola-9b3012233/",
   github: "https://github.com/SubrahamanyamPola",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/subramanyam-resume.pdf",
 
   summary: [
     "Artificial Intelligence and Machine Learning Engineer with 3+ years of experience supporting data processing pipelines, dataset validation workflows, and machine learning–ready analytics environments across financial and healthcare platforms.",
